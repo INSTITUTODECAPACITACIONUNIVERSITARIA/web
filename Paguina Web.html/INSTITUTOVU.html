@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Capacitación Universitaria y Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            position: relative;
+            overflow: hidden;
+            height: 100px; /* Ajusta la altura según el tamaño de tus imágenes */
+            background: #0c0a01; /* Color dorado para el encabezado */
+            color: #fff; /* Color blanco para el texto del encabezado */
+        }
+        .slider {
+            display: flex;
+            width: 200%; /* Número de imágenes multiplicado por 100% */
+            height: 100%;
+            animation: slide 20s infinite;
+        }
+        .slide {
+            width: 20%; /* 100% dividido por el número de imágenes */
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide:nth-child(1) {
+            background-image: url('derecho.jpg'); 
+        }jpg
+        .slide:nth-child(2) {
+            background-image: url('derecho.jpg');
+        }jpg
+        .slide:nth-child(3) {
+            background-image: url('derecho.jpg'); 
+        }jpg
+        .slide:nth-child(4) {
+            background-image: url('derecho.jpg');
+        }jpg
+        .slide:nth-child(5) {
+            background-image: url('derecho.jpg'); 
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+            100% { transform: translateX(0); }
+        }
+        header .logo-left,
+        header .logo-right {
+            position: absolute;
+            top: 10px;
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+        }
+        header .logo-left {
+            left: 10px;
+        }
+        header .logo-right {
+            right: 10px;
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #fff; /* Color blanco para el texto del encabezado */
+            font-size: 2.5em;
+            z-index: 1;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .announcement {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #FFD700; /* Color dorado */
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .announcement::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-right: 20px solid #FFD700; /* Color dorado */
+            border-radius: 5px;
+            transform: rotate(45deg);
+            animation: bounceIn 1s ease-out;
+        }
+        .announcement h2 {
+            color: #FFD700; /* Color dorado */
+            margin-top: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .announcement p {
+            line-height: 1.6;
+        }
+        .announcement ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: disc;
+        }
+        .announcement ul li {
+            margin: 5px 0;
+        }
+        .announcement .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #FFD700; /* Color dorado */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .announcement .button:hover {
+            background-color: #e6c200; /* Color dorado oscuro */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes bounceIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <!-- Logo en la esquina izquierda -->
+        <img src="logo1.jpg" alt="Logo Instituto" class="logo-left">
+        <!-- Logo en la esquina derecha -->
+        <img src="logo2.jpg" alt="Logo Instituto" class="logo-right">
+        <h1>Instituto de Capacitación Universitaria</h1>
+    </header>
+    <div class="container">
+        <div class="announcement">
+            <h2>¡Atención! Te Ofrece nuestro Instituto de Capacitación Universitaria y Virtual a nuestro Seminario de Justicia Penal para Adolescentes.</h2>
+            <p>Estamos emocionados de anunciar la nueva oferta académica del Instituto de Capacitación Universitaria y Virtual. Aprovecha nuestras oportunidades de formación y mejora tus habilidades con nuestros programas y cursos innovadores.</p>
+            <p><strong>¿Qué ofrecemos?</strong></p>
+            <ul>
+                <li>Programas en áreas de alta demanda como Derecho, Psicología, y más.</li>
+                <li>Diplomados con certificación profesional y reconocimiento internacional.</li>
+                <li>Modalidades flexibles: presencial y en línea.</li>
+                <li>Asesoramiento personalizado y recursos didácticos actualizados.</li>
+            </ul>
+            <p><strong>Inscribete a nuestro Seminario de Justicia Penal para los Adolescentes.</strong></p>
+
+            <p><strong>Temario</strong></p>
+            <ul>
+                <li>Adolescentes como grupo vulnerable:Fundamentos biopsicosociales y prevencion del delito. </li>
+                <li>Fundamentos del sistema Integral de Justicia Penal para los Adolescentes (SIJPA).</li>
+                <li>Mecanismos alternativos de Solucion de Contraversias con enfoque restaurativo para Adolescentes.</li>
+                <li>Etapa de Investigacion y medidas cauterales para personas Adolescentes.</li>
+                <li>La etapa intermedia en el ProcedimientoEspecializado para personas Adolescentes.</li>
+                <li>Etapa de Juicio y recursos.</li>
+                <li>Ejecucion de las medidas de sanacion en personas Adolescentes</li>
+                <li>Taller practico en audiencia en el sistema integral de justicia para Adolescentes.</li>
+                <li>Taller practico de tecnicas de litigacion y argumentacion juridica focalizada a la justicia penal para adolescentes.</li>
+                <li>La jurisprudencia especializada en Sistema de Justicia Penal para Adolescentes y transversalidad de juicio de amparo.</li>
+
+            <p>No pierdas la oportunidad de avanzar en tu carrera. Para más información e inscripción, marca a nuestros numeros telefonicos (729 688 2003) (551 147 3810)
+                  ¡Inscríbete Ahora!
+                
+    <footer>
+        © 2024 Instituto de Capacitación Universitaria y Virtual
+    </footer>
+</body>
+</html>
+
+
